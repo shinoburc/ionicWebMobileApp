@@ -29,6 +29,12 @@ const appPages: AppPage[] = [
     mdIcon: mailSharp
   },
   {
+    title: 'GeoLocation',
+    url: '/GeoLocation',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
     title: 'Outbox',
     url: '/page/Outbox',
     iosIcon: paperPlaneOutline,

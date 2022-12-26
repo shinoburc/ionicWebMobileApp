@@ -4,6 +4,8 @@ import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import Page from './pages/Page';
 
+import GeoLocation from './pages/GeoLocation';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -38,6 +40,9 @@ const App: React.FC = () => {
             <Route path="/page/:name" exact={true}>
               <Page />
             </Route>
+            <Route path="/geolocation">
+              <GeoLocation />
+          </Route>
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>
