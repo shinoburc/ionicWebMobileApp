@@ -11,7 +11,17 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { 
+  archiveOutline, archiveSharp,
+  bookmarkOutline,
+  heartOutline, heartSharp,
+  mailOutline, mailSharp,
+  paperPlaneOutline, paperPlaneSharp,
+  trashOutline, trashSharp,
+  warningOutline, warningSharp,
+  navigateOutline, navigateSharp,
+  navigateCircleOutline, navigateCircleSharp,
+} from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -31,8 +41,14 @@ const appPages: AppPage[] = [
   {
     title: 'GeoLocation',
     url: '/GeoLocation',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    iosIcon: navigateOutline,
+    mdIcon: navigateSharp,
+  },
+  {
+    title: 'Maps',
+    url: '/Maps',
+    iosIcon: navigateCircleOutline,
+    mdIcon: navigateCircleSharp,
   },
   {
     title: 'Outbox',
