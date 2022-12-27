@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, useIonViewDidEnter } from '@ionic/react';
 import { useEffect, useLayoutEffect } from 'react';
 
+import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { LatLng } from 'leaflet';
 
@@ -24,7 +25,7 @@ const Maps : React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <div className="container">
-          <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+          <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: "50vh" }}>
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
