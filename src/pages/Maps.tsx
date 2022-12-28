@@ -30,11 +30,9 @@ const Maps : React.FC = () => {
      });
   }, []);
 
-  /*
   useIonViewDidEnter(() => {
     window.dispatchEvent(new Event('resize'));
   });
-  */
 
   return (
     <IonPage>
