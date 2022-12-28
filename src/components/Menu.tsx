@@ -22,6 +22,8 @@ import {
   navigateOutline, navigateSharp,
   navigateCircleOutline, navigateCircleSharp,
   camera, cameraSharp,
+  phonePortrait,
+  phonePortraitSharp,
 } from 'ionicons/icons';
 import './Menu.css';
 
@@ -56,6 +58,12 @@ const appPages: AppPage[] = [
     url: '/Photo',
     iosIcon: camera,
     mdIcon: cameraSharp,
+  },
+  {
+    title: 'DisplayDeviceInfo',
+    url: '/DisplayDeviceInfo',
+    iosIcon: phonePortrait,
+    mdIcon: phonePortraitSharp,
   },
   {
     title: 'Outbox',
