@@ -6,6 +6,7 @@ import Page from './pages/Page';
 
 import GeoLocation from './pages/GeoLocation';
 import Maps from './pages/Maps';
+import Photo from './pages/Photo';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -46,6 +47,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/maps">
               <Maps />
+            </Route>
+            <Route path="/photo">
+              <Photo />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

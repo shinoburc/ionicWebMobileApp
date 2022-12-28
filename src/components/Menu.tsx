@@ -21,6 +21,7 @@ import {
   warningOutline, warningSharp,
   navigateOutline, navigateSharp,
   navigateCircleOutline, navigateCircleSharp,
+  camera, cameraSharp,
 } from 'ionicons/icons';
 import './Menu.css';
 
@@ -49,6 +50,12 @@ const appPages: AppPage[] = [
     url: '/Maps',
     iosIcon: navigateCircleOutline,
     mdIcon: navigateCircleSharp,
+  },
+  {
+    title: 'Photo',
+    url: '/Photo',
+    iosIcon: camera,
+    mdIcon: cameraSharp,
   },
   {
     title: 'Outbox',
