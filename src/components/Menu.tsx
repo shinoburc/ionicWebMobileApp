@@ -24,6 +24,7 @@ import {
   camera, cameraSharp,
   phonePortrait,
   phonePortraitSharp,
+  globe, globeSharp,
 } from 'ionicons/icons';
 import './Menu.css';
 
@@ -64,6 +65,12 @@ const appPages: AppPage[] = [
     url: '/DisplayDeviceInfo',
     iosIcon: phonePortrait,
     mdIcon: phonePortraitSharp,
+  },
+  {
+    title: 'FetchJSON',
+    url: '/FetchJSON',
+    iosIcon: globe,
+    mdIcon: globeSharp,
   },
   {
     title: 'Outbox',

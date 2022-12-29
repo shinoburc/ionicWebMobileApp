@@ -8,6 +8,7 @@ import GeoLocation from './pages/GeoLocation';
 import Maps from './pages/Maps';
 import Photo from './pages/Photo';
 import DisplayDeviceInfo from './pages/DisplayDeviceInfo';
+import FetchJSON from './pages/FetchJSON';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -54,6 +55,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/displaydeviceinfo">
               <DisplayDeviceInfo />
+            </Route>
+            <Route path="/fetchjson">
+              <FetchJSON />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
